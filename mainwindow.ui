@@ -1,0 +1,1341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>821</width>
+    <height>588</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>185</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>adbLink: The Kodi for Android Companion</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QProgressBar" name="progressBar">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>550</y>
+      <width>118</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>25</number>
+    </property>
+    <property name="textVisible">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="server_running">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>550</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>label1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="device_connected">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>550</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>label2</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="update_status">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>550</y>
+      <width>111</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>update status</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="apptitle">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>20</y>
+      <width>151</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Control devices</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listDevicesStatus">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>110</y>
+      <width>111</width>
+      <height>100</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listDevices">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>110</y>
+      <width>161</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Double-click any device ID to create a new record with ID filled in.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>20</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Current device</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>90</y>
+      <width>151</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Connected devices</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>90</y>
+      <width>40</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Status</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="deviceBox">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>40</y>
+      <width>141</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Click Setup Device to edit this description&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="editable">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="donate">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>490</y>
+      <width>301</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>donation</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>247</width>
+      <height>26</height>
+     </size>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="sambaLabel">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>550</y>
+      <width>59</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>samba</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>750</y>
+      <width>89</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Root functions</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>570</y>
+      <width>101</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+   
+    background-color: white;
+ 
+}
+
+
+QPushButton:pressed {
+    background-color: white;
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>Mount</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="refreshConnectedDevices">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>220</y>
+      <width>120</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>120</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>120</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Open ssh session to device. Requires root.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="text">
+     <string>Refresh ADB</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="killServer">
+    <property name="geometry">
+     <rect>
+      <x>625</x>
+      <y>220</y>
+      <width>120</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>120</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>120</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Open a terminal session on the connected device&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="text">
+     <string>Stop ADB</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>180</y>
+      <width>344</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QPushButton" name="fpushButton">
+       <property name="minimumSize">
+        <size>
+         <width>75</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>75</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Push a file to the selected folder or ad hoc directory&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="text">
+        <string>Push</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="fpullButton">
+       <property name="minimumSize">
+        <size>
+         <width>75</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>75</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Pull a file from the selected folder or ad hoc directory&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="text">
+        <string>Pull</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="fdellButton">
+       <property name="minimumSize">
+        <size>
+         <width>75</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>75</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Delete a file in selected folder or ad hoc directory&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="text">
+        <string>Del</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="fdellButton_2">
+       <property name="minimumSize">
+        <size>
+         <width>75</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>75</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Clear the Ad Hoc Directory field&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>Clear</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>248</x>
+      <y>40</y>
+      <width>558</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="newRecord">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Create new device record.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="text">
+        <string>New</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="editRecord">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Edit device record.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="text">
+        <string>Edit</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="delRecord">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Delete device record.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="text">
+        <string>Delete</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="connButton">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Connect android device via IP address&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="text">
+        <string>Connect</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="disButton">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Disconnect android device connected via IP address. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="text">
+        <string>Disconnect</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLineEdit" name="customdir">
+    <property name="geometry">
+     <rect>
+      <x>214</x>
+      <y>124</y>
+      <width>125</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Enter directory to access. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>214</x>
+      <y>102</y>
+      <width>103</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ad Hoc directory</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>102</y>
+      <width>108</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Preset directories</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>57</x>
+      <y>124</y>
+      <width>146</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Select folder to push/pull files to/from&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>addons</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>keymaps</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>media</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>sounds</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>system</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>userdata</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>temp</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>sdcard</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="rfLabel">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>420</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Root Functions</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="sideload_Button">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>272</y>
+      <width>120</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>120</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>120</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Install app to device&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="text">
+     <string>Install APK</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="uninstall_Button">
+    <property name="geometry">
+     <rect>
+      <x>252</x>
+      <y>272</y>
+      <width>120</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>120</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>120</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Uninstall apk&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="text">
+     <string>Uninstall APK</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="mvdataButton">
+    <property name="geometry">
+     <rect>
+      <x>374</x>
+      <y>272</y>
+      <width>120</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>120</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>120</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Open sftp session to device. Requires root.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="text">
+     <string>Move Kodi Data</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="adbshellButton">
+    <property name="geometry">
+     <rect>
+      <x>496</x>
+      <y>272</y>
+      <width>120</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>120</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>120</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Open a terminal session on the connected device&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="text">
+     <string>ADB Shell</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="backupButton">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>311</y>
+      <width>120</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>120</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>120</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Backup Kodi &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="text">
+     <string>Backup</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="restoreButton">
+    <property name="geometry">
+     <rect>
+      <x>252</x>
+      <y>311</y>
+      <width>120</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>120</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>120</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Restore Kodi's data files&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="text">
+     <string>Restore</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="doConsole">
+    <property name="geometry">
+     <rect>
+      <x>374</x>
+      <y>311</y>
+      <width>120</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>120</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>120</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Push splash screen png for Media Center&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="text">
+     <string>Console</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="logButton">
+    <property name="geometry">
+     <rect>
+      <x>496</x>
+      <y>311</y>
+      <width>120</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>120</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>120</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;View current and previous log&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="text">
+     <string>View Log</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="keypadButton">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>350</y>
+      <width>120</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>120</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>120</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Soft Dpad sends remote control keypresses to your device&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="text">
+     <string>Remote</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="cacheButton">
+    <property name="geometry">
+     <rect>
+      <x>252</x>
+      <y>350</y>
+      <width>120</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>120</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>120</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>Cache</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="splashButton">
+    <property name="geometry">
+     <rect>
+      <x>374</x>
+      <y>350</y>
+      <width>120</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>120</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>120</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>Splash Screen</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushRemote">
+    <property name="geometry">
+     <rect>
+      <x>496</x>
+      <y>350</y>
+      <width>120</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>120</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>120</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Push remote control definition xml to Media Center&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="text">
+     <string>Push Remote</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="mntButton">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>440</y>
+      <width>110</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>110</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>110</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Mount /USB drives. Requires root.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="text">
+     <string>Mount</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="umntButton">
+    <property name="geometry">
+     <rect>
+      <x>272</x>
+      <y>440</y>
+      <width>110</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>110</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>110</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Unmount USB drives. Requires root.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="text">
+     <string>Unmount</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="roButton">
+    <property name="geometry">
+     <rect>
+      <x>384</x>
+      <y>440</y>
+      <width>110</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>110</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>110</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Make /system partition read-only. Requires root.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="text">
+     <string> FS R/O</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="rwButton">
+    <property name="geometry">
+     <rect>
+      <x>496</x>
+      <y>440</y>
+      <width>110</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>110</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>110</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Make /system partition writeable. Requires root.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="text">
+     <string>FS R/W</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>821</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionDownload_Kodi"/>
+    <addaction name="actionReboot"/>
+    <addaction name="actionRecovery"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>About</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionHelp"/>
+   </widget>
+   <widget class="QMenu" name="menuRoot">
+    <property name="title">
+     <string>Root</string>
+    </property>
+    <addaction name="actionInstall_busybox"/>
+    <addaction name="actionUninstall_Busybox"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuRoot"/>
+   <addaction name="menuAbout"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+   <property name="toolTip">
+    <string>Quit adbLink</string>
+   </property>
+  </action>
+  <action name="actionHelp">
+   <property name="text">
+    <string>Help</string>
+   </property>
+  </action>
+  <action name="actionPreferences">
+   <property name="text">
+    <string>Device Setup</string>
+   </property>
+   <property name="toolTip">
+    <string>Set up device</string>
+   </property>
+  </action>
+  <action name="actionReboot">
+   <property name="text">
+    <string>Reboot device</string>
+   </property>
+  </action>
+  <action name="actionRecovery">
+   <property name="text">
+    <string>Reboot recovery</string>
+   </property>
+   <property name="toolTip">
+    <string>Reboot Recovery</string>
+   </property>
+  </action>
+  <action name="actionInstall_busybox">
+   <property name="text">
+    <string>Install Mount Tools</string>
+   </property>
+   <property name="toolTip">
+    <string>Install  mount tools</string>
+   </property>
+  </action>
+  <action name="actionUninstall_Busybox">
+   <property name="text">
+    <string>Uninstall Mount Tools</string>
+   </property>
+   <property name="toolTip">
+    <string>Uninstall mount tools</string>
+   </property>
+  </action>
+  <action name="actionFirmware_install">
+   <property name="text">
+    <string>Install Firmware</string>
+   </property>
+   <property name="toolTip">
+    <string>Upgrade/downgrade Fire TV firmware </string>
+   </property>
+  </action>
+  <action name="actionCredits">
+   <property name="text">
+    <string>Thanks</string>
+   </property>
+  </action>
+  <action name="actionInstall_Recovery">
+   <property name="text">
+    <string>Install Clockwork Mod</string>
+   </property>
+   <property name="toolTip">
+    <string>Install CWM recovery</string>
+   </property>
+  </action>
+  <action name="actionInstall_SSH">
+   <property name="text">
+    <string>Install SSH</string>
+   </property>
+  </action>
+  <action name="actionUninstall_SSH">
+   <property name="text">
+    <string>Uninstall SSH</string>
+   </property>
+  </action>
+  <action name="actionView_Log">
+   <property name="text">
+    <string>View Log</string>
+   </property>
+  </action>
+  <action name="actionSwap_data">
+   <property name="text">
+    <string>Swap /data</string>
+   </property>
+   <property name="toolTip">
+    <string>Swap /data to external</string>
+   </property>
+  </action>
+  <action name="actionUnlock_Bootloader">
+   <property name="text">
+    <string>Unlock Bootloader</string>
+   </property>
+  </action>
+  <action name="actionConsole">
+   <property name="text">
+    <string>Console</string>
+   </property>
+   <property name="toolTip">
+    <string>Open console on PC</string>
+   </property>
+  </action>
+  <action name="actionMount_CIFS">
+   <property name="text">
+    <string>Mount Network Share</string>
+   </property>
+  </action>
+  <action name="actionDownload_Kodi">
+   <property name="text">
+    <string>Download Kodi</string>
+   </property>
+  </action>
+  <action name="actionInstall_Stock_Recovery">
+   <property name="text">
+    <string>Install Stock Recovery</string>
+   </property>
+  </action>
+  <action name="actionInstall_Samba">
+   <property name="text">
+    <string>Install Samba</string>
+   </property>
+  </action>
+  <action name="actionUninstall_Samba">
+   <property name="text">
+    <string>Uninstall Samba</string>
+   </property>
+  </action>
+  <action name="actionInstallBootmenu">
+   <property name="text">
+    <string>install Boot Menu</string>
+   </property>
+  </action>
+  <action name="actionUninstall_Boot_Menu">
+   <property name="text">
+    <string>Uninstall Boot Menu</string>
+   </property>
+  </action>
+  <action name="actionMove_Restore_Data">
+   <property name="text">
+    <string>Media Center Data</string>
+   </property>
+  </action>
+  <action name="actionRoot_device">
+   <property name="text">
+    <string>Root device</string>
+   </property>
+   <property name="toolTip">
+    <string>Root device with Towelroot</string>
+   </property>
+  </action>
+  <action name="actionSplash_Screen">
+   <property name="text">
+    <string>Splash Screen</string>
+   </property>
+   <property name="toolTip">
+    <string>Push splash.png to media directory</string>
+   </property>
+  </action>
+  <action name="actionSoft_Keypad">
+   <property name="text">
+    <string>Soft Keypad</string>
+   </property>
+  </action>
+  <action name="actionInstall_FireStarter">
+   <property name="text">
+    <string>Install FireStarter</string>
+   </property>
+  </action>
+  <action name="actionInstall_AFTV_Recovery">
+   <property name="text">
+    <string>Install AFTV 4K Recovery </string>
+   </property>
+   <property name="toolTip">
+    <string>Install Amazon Fire 4K TV Recovery</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

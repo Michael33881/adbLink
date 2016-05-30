@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>adbLink Overview</title></head><body>
+<b><u>adbLink Overview</b></u>
+<p>
+<u><b>adbLink</b></u> is a companion program for any device running Android Kodi. <p><b>adbLink</b> allows you to
+install (sideload) apps to your device without the bother of installing the Android SDK. <p>
+Additionally, it allows you copy files to and from your device, backup and restore Kodi's data, and more. <p>
+<p>
+
+
+<p>
+The upper left Current Device combobox contains the names of your Android devices.
+This dropdown combobox is empty when you first run adbLink. Once you add
+devices, you choose a device from this menu in order to interact with it. 
+This combobox is empty when you first start <b>adbLink</b>. It fills as you add device records.
+<p>
+The buttons associated with the device dropdown menu are:<p>
+<b>New:</b>   Display a blank device settings screen (New USB devices are also added
+via a double-click in the Connected Devices listbox, see below).<br>
+<p>
+<b>Edit:</b>  Edit the selected device.<br>
+<p>
+
+<b>Delete:</b> Delete the selected device.<br>
+<p>
+<b>Connect:</b> Connect the selected device..<br>
+<p>
+<b>Disconnect:</b>  Disconnect the selected device.<br>
+
+
+<p>
+The Connect and Disconnect buttons are disabled if the selected
+device is connected via USB.
+<p>
+The <b>Connected Devices</b> listbox shows all current adb connections.<p>
+The </b>Status</b> listbox shows the device status (device/emulator/offline,etc).<br>
+<p>
+Double-clicking a USB device ID in the Connected Devices listbox opens
+a new device record with the ID filled in. This allows you to easily
+create a device record for USB connections
+<p>
+The <b>Restart ADB</b> button: Does refresh of connected devices
+<p>
+The <b>Stop ADB button</b> stops the ADB server.<br>
+<p>
+The <b>Preset directories</b> dropdown menu allows you to select a directory to push files to,
+pull files from or delete files. All Kodi directories are included as well as sdcard and extUsb
+<p>
+The <b>Ad Hoc</b> Directory entry field allows entry of any
+directory you have access to on the device for push/pull/delete.
+<p>
+The <b>Push</b> button allows selection of a file on the PC to be pushed
+to the selected directory on the connected device.
+<p>
+The <b>Pull</b> button allows selection of a file on the device to be pulled
+from the selected directory on the connected device.
+<p>
+The <b>Del</b> button allows selection of a file on the device for deletion.
+ <p>
+The <b>Clear</b> button clears the <b>Ad Hoc</b> directory selection.
+<p>
+The lower buttons are:<p>
+
+<b>Install apk:</b> Installs an apk file.<p>
+<b>Uninstall apk:</b> Uninstalls an apk file.<p>
+<b>Screen Shot:</b> Takes a screen shot of whatever is on your device's TV screen.<p>
+<b>ADB Shell:</b> Opens a console on the connected device. Much like telnet.<p>
+<b>Open SSH:</b> Open a SSH connection to the selected device<p>
+<b>Backup:</b> Create a Kodi backup.<p>
+<b>Restore:</b> Restore a Kodi backup (made by adbLink).<p>
+<b>Console:</b> Opens a console for command-line entry of adb/fastboot commands.<p>
+<b>View Log:</b> View a log of your current or previous adbLink session. Copy the
+log to the system clipboard for pasting into messages,email,etc.<p>
+<b>Open SFTP:</b> Open a SFTP connection to the selected device<p>
+<b>Remote:</b>WIFI/USB Remote.<p>
+<b>Cache:</b>Adjust Kodi's Cache settings.<p>
+<b>Splash Screen:</b> Push a remote control XML file to Kodi<p>
+<b>Push Remote:</b> Push a remote control XML file to Kodi<p>
+<b>Move Kodi Data</b>Move Kodi's data to an external partition<p>
+<p>
+<u><b>The following buttons Require Root and appear only for rooted systems.</b></u><p>
+<b>Mount:</b> Mount USB drives/sticks<p>
+<b>Unmount:</b>Unmount USB drives/sticks<p>
+<b>FS R/O:</b>Make the file system read-only<p>
+<b>FS R/W:</b>Make the file system read-write<p>
+<p><b>Start Samba:</b>Start the Samba filesharing server<p>
+<b>Stop Samba:</b>Stop the Samba filesharing server<p>
+
+<b>adbLink</b> is released under the GPL V3. Source is available at http://github.com/jocala/adbLink
+<p>
+<p>
+If you have questions or comments, please email jocala@jocala.com. adbLink produces a log file, adbshield.log, with each run. Include it in your email or post if you're having problems.<p>
+<a href="menu.html">main menu</a>
+</body</html>

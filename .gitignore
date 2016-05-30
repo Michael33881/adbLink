@@ -1,0 +1,11 @@
+adbLink..user*
+adblink.log
+adblink.log.old
+adblink.db
+*.autosave
+*~
+build
+.qmake.stash
+Makefile
+adbfiles/xbin
+backup

@@ -1,0 +1,35 @@
+<RCC>
+    <qresource prefix="/">
+        <file>assets/donate.png</file>
+        <file>assets/1downarrow.png</file>
+        <file>assets/donatel.png</file>
+        <file>assets/goat.png</file>
+        <file>assets/kodi.png</file>
+        <file>assets/kodi.html</file>
+        <file>assets/about.html</file>
+        <file>assets/adbserver.html</file>
+        <file>assets/adbshell.html</file>
+        <file>assets/atvsetup.html</file>
+        <file>assets/shieldsetup.html</file>
+        <file>assets/keyboard.html</file>
+        <file>assets/backup.html</file>
+        <file>assets/cache.html</file>
+        <file>assets/console.html</file>
+        <file>assets/filero.html</file>
+        <file>assets/filerw.html</file>
+        <file>assets/inbusybox.html</file>
+        <file>assets/installapk.html</file>
+        <file>assets/offline.html</file>
+        <file>assets/menu.html</file>
+        <file>assets/preferences.html</file>
+        <file>assets/pushpull.html</file>
+        <file>assets/rbreco.html</file>
+        <file>assets/reboot.html</file>
+        <file>assets/remote.html</file>
+        <file>assets/restore.html</file>
+        <file>assets/splash.html</file>
+        <file>assets/uninapk.html</file>
+        <file>assets/usbdrive.html</file>
+        <file>assets/vlog.html</file>
+    </qresource>
+</RCC>
