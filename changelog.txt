@@ -1,23 +1,37 @@
-AdbFire 2.03 changelog
+adbLink 2.04 changelog
+
+Name change from adbXXXX  per
+demand from Amazon's lawyers.
+
+New name: adbLink
+
+QT framework updated to v5.6
+
+Deprecated Fire OS functions removed
+
+3rd-party root functions removed
+
+
+adbLink 2.03 changelog
 
 SPMC package name changed
 
 Minor code cleanup
 
 
-AdbFire 2.02b changelog
+adbLink 2.02b changelog
 
 More fixes to restore routines
 
 
-AdbFire 2.02a changelog
+adbLink 2.02a changelog
 
 Fixes to restore routines.
 
 
-AdbFire 2.02 changelog
+adbLink 2.02 changelog
 
-adbFire is now compatible with most Android devices
+adbLink is now compatible with most Android devices
 
 WIFI/USB Remote control added 
 
@@ -49,7 +63,7 @@ SELinux set to Enforcing after external drive umounts.
 
 At boot options require a rom with configurable startup script.
 
-AdbFire 2.01 changelog
+adbLink 2.01 changelog
 
 Autoconnect turned off, no
 autoconnect at startup, edit
@@ -79,7 +93,7 @@ moved into separate groups
 
 
 
-AdbFire 2.0 changelog
+adbLink 2.0 changelog
 
 Updated for Fire TV 2.0 - Fire OS 5
 
@@ -105,7 +119,7 @@ Various bugfixes
 
 
 
-AdbFire 1.31 changelog
+adbLink 1.31 changelog
 
 Splash Screen install fixed
 
@@ -119,7 +133,7 @@ Various bug fixes
 
 
 
-adbFire 1.30 changelog
+adbLink 1.30 changelog
 
 Root users: "Busybox not installed" error fixed
 
@@ -128,10 +142,10 @@ removed from Llama Options.
 
 
 
-adbFire 1.29 changelog
+adbLink 1.29 changelog
 
 
-adbFire database supports unlimited devices
+adbLink database supports unlimited devices
 USB mode now automatic
 See connected devices at a glance
 Ad Hoc directory browsing for push/pull/delete
@@ -139,7 +153,7 @@ Updated hyperlinked help
 Many bug fixes
 
 
-adbFire 1.28 changelog
+adbLink 1.28 changelog
 
 Busybox non-root install and path fixed
 for USB mode.
@@ -147,7 +161,7 @@ for USB mode.
 Linux: sucheck delay added
 
 
-adbFire 1.27 changelog
+adbLink 1.27 changelog
 
 Qt Framework updated from 5.3.2 to 5.4.2 
 
@@ -155,7 +169,7 @@ Llama Options dialog updated to correct
 misalignment in some situations.
 
 
-adbFire 1.26 changelog
+adbLink 1.26 changelog
 
 Google adb for Windows/OSX/Linux updated to 1.0.32.
 
@@ -176,7 +190,7 @@ push/pull/delete fixed
 
 
 
-adbFire 1.25 changelog
+adbLink 1.25 changelog
 
 /data swap init.bueller.sh script edited
 for pre-rooted firmware 51.1.5. Thanks to
@@ -190,12 +204,12 @@ Backup routine fixed to allow for relocated Thumbnails.
 USB mode routines expanded. The USB mode checkbox now
 attempts to detect if a device is connected via USB. A
 USB via console checkbox is provided as a backup method
-if a USB connection is made manually at the adbFire console.
+if a USB connection is made manually at the adbLink console.
 
 Please refer to the USB mode/USB via console help file
 for more detail.
 
-adbFire 1.24 changelog
+adbLink 1.24 changelog
 
 Kodi/Fork data move to/from extUsb
 
@@ -210,7 +224,7 @@ HTML help added for Kodi data move options
 extUsb added to Push/Pull/Delete dropdown choices
 
 
-adbFire 1.23 changelog
+adbLink 1.23 changelog
 
 Busybox added for non-root users.
 
@@ -258,7 +272,7 @@ TVMC added to media center presets in setup dialog.
 TVMC added to Llama options.
 
 
-adbFire 1.22 changelog
+adbLink 1.22 changelog
 
 Llama Options now include SPMC, Koyring's
 fork of Kodi. Start SPMC at boot, place
@@ -269,7 +283,7 @@ choice of Ikono TV or Classic TV
 as your switching program. 
 
 Device Setup "Updates" button message changed from
-"No update available" to "No adbFire update available"
+"No update available" to "No adbLink update available"
 
 Various typos in html help fixed.
 
@@ -297,7 +311,7 @@ These root functions require that the checkbox be
 checked/unchecked by the user. Nothing automatic occurs.
 
 
-adbFire 1.20 changelog
+adbLink 1.20 changelog
 
 Timestamp/Version number/OS header added to log file
 
@@ -313,10 +327,10 @@ Device Setup Help re-written to reflect new layout.
 
 Root requirement to check Kodi running state removed.
 
-The adbFire Backup format is now similar to the format of the
+The adbLink Backup format is now similar to the format of the
 Kodi Backup Addon.
 
-Backups made by the Kodi Backup Addon can be restored by adbFire.
+Backups made by the Kodi Backup Addon can be restored by adbLink.
  
 Main window "Setup" button now reads "Device Setup"
 
@@ -325,9 +339,9 @@ Busybox v1.24 smaller, more applets and HFS+ Label/UUID support
 New SSH. Recompiled for more speed, less size and no 2gb file
 size limit with sftp/scp.
 
-adbFire now attempts connection with first device at startup.
+adbLink now attempts connection with first device at startup.
 
-adbFire now attempts connection when device is selected 
+adbLink now attempts connection when device is selected 
 from combobox.
 
 When uninstalling System Tools, backups are made of the
@@ -346,7 +360,7 @@ LLama Options "Boot AFTV to Kodi" replaces "Kodi" with "Media Center"
 Llama Options "Link Kodi to ikonoTV" replaces "Kodi" with "Media Center"
 
 
-adbFire 1.18 changelog
+adbLink 1.18 changelog
 =======================
 Bug in aftv-unlock detection fixed.
 
@@ -368,7 +382,7 @@ Help Selection: "Preferences Dialog" changed to "Device Setup"
 
 
 
-adbFire 1.17 changelog
+adbLink 1.17 changelog
 =======================
 
 Menu option "Preferences" changed to "Device Setup"
@@ -383,7 +397,7 @@ Linux x-terminal-emulator changed to gnome-terminal.
 
 Backup Fire TV, Restore to Fire TV Stick added to Video Help
 
-adbFire 1.16 changelog
+adbLink 1.16 changelog
 =======================
 Multiple device database added. Manage up to 10
 Fire TV devices, each with it's own individual
@@ -399,14 +413,14 @@ to the system path. Linux/OS X users have a command
 to accomplish the same.
 
 Video Help menu added. This links to YouTube
-videos showing various adbFire functions in action.
+videos showing various adbLink functions in action.
 Currently:
 
 Using USB Mode
 Installing WinUSB Drivers
-Using Multiple Devices with adbFire
-Mounting CIFS/NFS Shares with adbFire
-Installing adbFire and Kodi
+Using Multiple Devices with adbLink
+Mounting CIFS/NFS Shares with adbLink
+Installing adbLink and Kodi
 
 Kodi cache settings added. Choose any cache values
 for Kodi you need, not limited to a few presets.
@@ -414,7 +428,7 @@ for Kodi you need, not limited to a few presets.
 Menu function "Install System Tools" replaces
 former function "Install Busybox". This encompasses
 the installation of Busybox, Samba and system and
-init scripts required by adbFire.
+init scripts required by adbLink.
 
 Linux bug for console fixed
 Ikono TV icons changed
@@ -424,7 +438,7 @@ Various help files added
 Minor bugs fixed as found.
 
 
-adbFire 1.15 changelog
+adbLink 1.15 changelog
 =======================
 
 
@@ -434,7 +448,7 @@ Console option for adb command-line
 
 Various minor bugs fixed, forms adjusted, etc.
 
-adbFire 1.14 changelog
+adbLink 1.14 changelog
 =======================
 
 Help system completely rebuilt.
@@ -469,7 +483,7 @@ Progress bar updater fine-tuned.
 Various minor bugs fixed, forms adjusted, etc.
 
 
-adbFire 1.12 changelog
+adbLink 1.12 changelog
 =======================
 
 Bug in XBMC file delete routine fixed
@@ -480,7 +494,7 @@ Log file viewer added
 
 various minor bugs fixed, forms adjusted, etc.
 
-adbFire 1.11 changelog
+adbLink 1.11 changelog
 =======================
 
 All XBMC options are now non-root.
@@ -492,7 +506,7 @@ various minor bugs fixed, forms adjusted, etc.
 
 
 
-adbFire 1.10 changelog
+adbLink 1.10 changelog
 =======================
 
 All XBMC options are now non-root.
@@ -509,7 +523,7 @@ Help updated for SSH
 various minor bugs fixed, forms adjusted, etc.
 
 
-adbFire 1.09 changelog
+adbLink 1.09 changelog
 =======================
 
 Llama dialog options fixed to work with non-root users.
@@ -527,16 +541,16 @@ functions, Root menu contains root-only functions.
  
 various minor bugs fixed, forms adjusted, etc.
 
-adbFire 1.08 changelog
+adbLink 1.08 changelog
 =======================
 
 Llama options changed to require ikonoTV rather than Classic TV
 due to geographic restrictions. Classic TV is only available in the US.
 
-adbFire check for Amazon Updates now operates in realtime,
+adbLink check for Amazon Updates now operates in realtime,
 rather than depending on a database field. 
 
-adbFire check for USB drive persistence now operates in realtime,
+adbLink check for USB drive persistence now operates in realtime,
 rather than depending on a database field. 
 
 Database fields for USB drive persistence and Amazon Updates removed.
@@ -550,14 +564,14 @@ Support for CWM recovery installation re-coded. Images:
 firetv-cwm_recovery-6.0.5.1.1.img 
 recovery-stock-51.1.0.img 
 
-are now included with adbFire 1.08 with permission from rbox.
+are now included with adbLink 1.08 with permission from rbox.
 
 Help re-written for firmware and recovery installation.
 
 various minor bugs fixed, forms adjusted, etc.
 
 
-adbFire 1.07 changelog
+adbLink 1.07 changelog
 =======================
 Qt framework updated to 5.3.2
 
@@ -569,16 +583,16 @@ various minor bugs fixed, forms adjusted, etc.
 
 Help expanded.
  
-adbFire 1.06 changelog
+adbLink 1.06 changelog
 =======================
 
-The Windows adbFire folder can now be installed
+The Windows adbLink folder can now be installed
 wherever you wish.  It has been tested under Windows 7
-and XP. Shortcuts to adbFire.exe  work as expected. 
+and XP. Shortcuts to adbLink.exe  work as expected. 
 
-The adbFire folder is  where all files needed by adbFire.exe
+The adbLink folder is  where all files needed by adbLink.exe
 kept. This folder holds adb.exe, scripts and various other files,
-in addition to the adbFire.exe program. 
+in addition to the adbLink.exe program. 
 
 Samba networking has been added. Click  "Mount" and after your
 usb storage mounts, it's exported via samba. Your /sdcard folder
@@ -598,25 +612,25 @@ various minor bugs fixed, forms adjusted, etc.
 
 Help expanded.
 
-adbFire 1.05 changelog
+adbLink 1.05 changelog
 =======================
 
 Both the Windows version and the OS X version can now be installed
 wherever you wish.  
 
-The Windows version of adbFire ships with a folder, named 
-adbfiles. You can install the adbFire.exe program wherever
+The Windows version of adbLink ships with a folder, named 
+adbfiles. You can install the adbLink.exe program wherever
 you wish, as long as the adbfiles folder is installed there also.
 
-The adbfiles folder is  where all files needed by adbFire.exe
+The adbfiles folder is  where all files needed by adbLink.exe
 kept. This folder holds adb.exe, scripts and various other files. 
 
-The OS X version of adbFire, adbFire.app is usually installed to
+The OS X version of adbLink, adbLink.app is usually installed to
 the /Application folder on your Mac. However you can move it
-wherever you like. The Mac version of adbFire also has an adbfiles
-folder, but it's inside the adbFire.app bundle.
+wherever you like. The Mac version of adbLink also has an adbfiles
+folder, but it's inside the adbLink.app bundle.
 
-adbFire now includes Llama, with permission from the developer at
+adbLink now includes Llama, with permission from the developer at
 KebabApps.com. Llama allows us to:
 
 1. Boot AFTV directly to XBMC
@@ -634,8 +648,8 @@ The Preferences dialog has changed. If you open the
 preferences dialog then exit without changes,  the
 "updates disabled/enabled" pop-up dialog is suppressed.  
 
-adbFire can now check for updates when it starts, and open
-the adbFire page to download the new version if desired.
+adbLink can now check for updates when it starts, and open
+the adbLink page to download the new version if desired.
 This option is on by default, but can be turned off in
 Preferences.
 
@@ -648,15 +662,15 @@ dedicated button. Elmerhuso's XBMC splash screen and a Kodi splash
 screen are included, and of course you can add your own. Drop them
 into the "splash" folder.  
 
-Clickable URL links are now included. Links include adbFire's home
+Clickable URL links are now included. Links include adbLink's home
 page, jocala.com/adbfire.html, the XBMC wiki, and links to the forum
-topics where adbFire is supported, xda and xbmc. 
+topics where adbLink is supported, xda and xbmc. 
 
 version number changed to constant. 
 
 Help expanded.
 
-adbFire 1.04 changelog
+adbLink 1.04 changelog
 =======================
 
 Extensive log file now produced after each run.
@@ -667,7 +681,7 @@ Busybox install bug fixed (post-install file cleanup).
 Busybox uninstall bug fixed (post-uninstall file cleanup).
 USB unmounting tuned for multiple drives.
  
-adbFire 1.03 changelog
+adbLink 1.03 changelog
 
 USB drives/sticks now mount at /storage/usb/sd*
 Firmware install searches all /storage/usb/sd* for .bin and .zip files.
@@ -675,16 +689,16 @@ USB Firmware install, Pull and Delete dialogs now utilize a file browser.
 Help system updated to reflect changes.
 
 
-adbFire 1.02 changelog
+adbLink 1.02 changelog
 
 addition of ntfs-3g for mounting ntfs media
 addition of mount.exfat-fuse for mounting exfat media
 addition of mounting for ext2,ext3,ext4 media
 mount now addresses all connected USB media, not just /dev/block/sda
 edit of help file to reflect mount changes
-screen shots saved to unique filenameadbFire 1.01 changelog
+screen shots saved to unique filenameadbLink 1.01 changelog
 
-adbFire 1.01 changelog
+adbLink 1.01 changelog
 =======================
 
 AFTV Firmware upgrade/downgrade
@@ -702,10 +716,10 @@ bug cleanup in win32 file deletion routines
 
 =========================
 
-adbFire V1.0 changelog
+adbLink V1.0 changelog
 
 Fix for OS X Fire TV root
-Application home directory change: “adbFire”
+Application home directory change: “adbLink”
 Addition of preferences dialog 
 Addition of support for XBMC forks (BeyondXBMC, XBMCLauncher, etc)
 Pulled files folder preference
