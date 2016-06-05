@@ -56,8 +56,6 @@ private slots:
 
     void delay(int secs);
 
-   void getpackage();
-
    void insertDevice();
 
    void createTables();

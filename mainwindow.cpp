@@ -18,7 +18,7 @@
 
 #include "backupdialog.h"
 
-#include "mediacenterdialog.h"
+
 #include "restdialog.h"
 #include "filedownloader.h"
 
@@ -3076,23 +3076,6 @@ void MainWindow::on_adbshellButton_clicked()
 
 
 }
-
-
-//////////////////////////////////////////////////
-void MainWindow::getpackage()
-{
-
-logfile("opening getpackage dialog");
-
-    mediacenterDialog dialog;
-
-    if(dialog.exec() == QDialog::Accepted)
-    {
-      xbmcpackage = dialog.xbmcpackageName();
-      filepath = dialog.filepath();
-    }
-
-} // end getpackage
 
 
 
