@@ -25,7 +25,6 @@ SOURCES += main.cpp\
     kodidialog.cpp \
     bootmenudialog.cpp \
     datadialog.cpp \
-    mediacenterdialog.cpp \ 
     restdialog.cpp \
     backupdialog.cpp \
     cachedialog.cpp \
@@ -48,7 +47,6 @@ HEADERS  += mainwindow.h \
     kodidialog.h \
     bootmenudialog.h \
     datadialog.h \
-    mediacenterdialog.h \ 
     restdialog.h \
     backupdialog.h \
     cachedialog.h \
