@@ -24,7 +24,6 @@ SOURCES += main.cpp\
     cifsdialog.cpp \
     kodidialog.cpp \
     bootmenudialog.cpp \
-    unbootdialog.cpp \
     datadialog.cpp \
     mediacenterdialog.cpp \ 
     restdialog.cpp \
@@ -48,7 +47,6 @@ HEADERS  += mainwindow.h \
     cifsdialog.h \
     kodidialog.h \
     bootmenudialog.h \
-    unbootdialog.h \
     datadialog.h \
     mediacenterdialog.h \ 
     restdialog.h \
