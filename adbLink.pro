@@ -19,9 +19,7 @@ SOURCES += main.cpp\
     uninstalldialog.cpp \
     preferencesdialog.cpp \
     usbfiledialog.cpp \
-    creditsdialog.cpp \
     adblogdialog.cpp \
-    cifsdialog.cpp \
     kodidialog.cpp \
     bootmenudialog.cpp \
     datadialog.cpp \
