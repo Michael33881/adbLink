@@ -124,19 +124,7 @@ QString preferencesDialog::filepath() {
 QString preferencesDialog::port() {
    return ui->port->text();
 }
-bool preferencesDialog::updatecheck() {
- return ui->ftvupdatesBox->isChecked();
-}
 
-
-
-bool preferencesDialog::sshcheck() {
- return ui->sshbox->isChecked();
-}
-
-bool preferencesDialog::mountcheck() {
-  return ui->mountbox->isChecked();
-}
 
 
 bool preferencesDialog::versioncheck() {
@@ -191,23 +179,7 @@ void preferencesDialog::setPulldir(const QString &pulldir)
     ui->pulldir->setText(pulldir);
 }
 
-void preferencesDialog::setftvUpdate(const bool &updatecheck)
-{
-   ui->ftvupdatesBox->setChecked(updatecheck);
-}
 
-
-void preferencesDialog::setsshBoot(const bool &sshcheck)
-{
-    ui->sshbox->setChecked(sshcheck);
-}
-
-void preferencesDialog::setmountBoot(const bool &mountcheck)
-{
-
-    ui->mountbox->setChecked(mountcheck);
-
-}
 
 void preferencesDialog::setversioncheck(const bool &versioncheck)
 {
@@ -496,24 +468,6 @@ void preferencesDialog::setadb_pref(const QString &adb_pref)
         su_pref=true;
       else su_pref=false;
 
-
-    if (!su_pref)
-      {ui->mountbox->setEnabled(false);
-       ui->mountbox->setVisible(false);
-    }
-
-    if(ui->devicenameLabel->text().contains("Amazon device") && su_pref)
-     {
-       ui->ftvupdatesBox->setEnabled(true);
-       ui->ftvupdatesBox->setHidden(false);
-    }
-
-    else
-
-    {
-      ui->ftvupdatesBox->setEnabled(false);
-      ui->ftvupdatesBox->setHidden(true);
-   }
 
     if (adb_pref.contains(":5555"))
         ui->isusb->setEnabled(false);

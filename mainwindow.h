@@ -53,15 +53,10 @@ private slots:
 
     void on_adbshellButton_clicked();
 
-    void check_update_status();
 
     void delay(int secs);
 
-   bool check_dep_menu();
-
    void getpackage();
-
-   void insertShare();
 
    void insertDevice();
 
@@ -80,22 +75,12 @@ private slots:
 
    void rebootDevice(QString reboot);
 
-   bool mount_system(QString mnt);
-
    bool fileExists(QString path);
-
-   bool mount_root(QString mnt);
-
-   bool is_su();
 
    bool is_busybox();
 
-   bool is_system_tools();
-
-   QString is_amazon();
 
     QString strip (QString str);
-
 
     void blank_entry_form();
 
@@ -116,7 +101,7 @@ private slots:
 
     bool find_daddr(QString);
 
-    void updateShares();
+
 
     void updateRoot();
 
@@ -126,10 +111,6 @@ private slots:
     void getRecord(QString descrip);
 
     void on_actionReboot_triggered();
-
-    void writeConfig();
-
-    void readShares();
 
 
 
@@ -146,21 +127,11 @@ private slots:
     void on_actionRecovery_triggered();
 
 
-    void on_actionInstall_busybox_triggered();
 
-    void on_actionUninstall_Busybox_triggered();
 
     void on_fdellButton_clicked();
 
-    void on_actionFirmware_install_triggered();
 
-    void on_mntButton_clicked();
-
-    void on_umntButton_clicked();
-
-    void on_rwButton_clicked();
-
-    void on_roButton_clicked();
 
     void on_donate_clicked();
 
@@ -168,13 +139,8 @@ private slots:
 
     void onReqCompleted();
 
-    void on_actionCredits_triggered();
 
-    void on_actionInstall_Recovery_triggered();
 
-    void on_actionInstall_SSH_triggered();
-
-    void on_actionUninstall_SSH_triggered();
 
 
     void on_actionView_Log_triggered();
@@ -183,15 +149,8 @@ private slots:
 
     void on_editRecord_clicked();
 
-    void on_actionInstall_Stock_Recovery_triggered();
 
-    void on_actionInstall_Samba_triggered();
 
-    void on_actionUninstall_Samba_triggered();
-
-    void on_actionInstallBootmenu_triggered();
-
-    void on_actionUninstall_Boot_Menu_triggered();
 
     void dataentry(int flag);
 
@@ -226,23 +185,15 @@ private slots:
 
    void on_logButton_clicked();
 
-   void on_actionRoot_device_triggered();
-
    void on_cacheButton_clicked();
 
    void on_splashButton_clicked();
 
    void on_mvdataButton_clicked();
 
-   void on_actionInstall_FireStarter_triggered();
-
    void on_keypadButton_clicked();
 
-   void on_cifsonButton_clicked();
-
-   void on_cifsoffButton_clicked();
-
-   void on_actionInstall_AFTV_Recovery_triggered();
+   void on_actionView_Kodi_Log_triggered();
 
 private:
     Ui::MainWindow *ui;

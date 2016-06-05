@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>821</width>
-    <height>588</height>
+    <height>509</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -72,19 +72,6 @@
     </property>
     <property name="text">
      <string>label2</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="update_status">
-    <property name="geometry">
-     <rect>
-      <x>360</x>
-      <y>550</y>
-      <width>111</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>update status</string>
     </property>
    </widget>
    <widget class="QLabel" name="apptitle">
@@ -182,7 +169,7 @@
     <property name="geometry">
      <rect>
       <x>240</x>
-      <y>490</y>
+      <y>410</y>
       <width>301</width>
       <height>21</height>
      </rect>
@@ -200,19 +187,6 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="sambaLabel">
-    <property name="geometry">
-     <rect>
-      <x>520</x>
-      <y>550</y>
-      <width>59</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>samba</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
@@ -224,36 +198,6 @@
     </property>
     <property name="text">
      <string>Root functions</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton">
-    <property name="geometry">
-     <rect>
-      <x>590</x>
-      <y>570</y>
-      <width>101</width>
-      <height>32</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QPushButton {
-   
-    background-color: white;
- 
-}
-
-
-QPushButton:pressed {
-    background-color: white;
-}
-
-</string>
-    </property>
-    <property name="text">
-     <string>Mount</string>
-    </property>
-    <property name="checkable">
-     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="refreshConnectedDevices">
@@ -629,19 +573,6 @@ QPushButton:pressed {
      </property>
     </item>
    </widget>
-   <widget class="QLabel" name="rfLabel">
-    <property name="geometry">
-     <rect>
-      <x>340</x>
-      <y>420</y>
-      <width>101</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Root Functions</string>
-    </property>
-   </widget>
    <widget class="QPushButton" name="sideload_Button">
     <property name="geometry">
      <rect>
@@ -972,118 +903,6 @@ QPushButton:pressed {
      <string>Push Remote</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="mntButton">
-    <property name="geometry">
-     <rect>
-      <x>160</x>
-      <y>440</y>
-      <width>110</width>
-      <height>32</height>
-     </rect>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>110</width>
-      <height>32</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>110</width>
-      <height>32</height>
-     </size>
-    </property>
-    <property name="toolTip">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Mount /USB drives. Requires root.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-    </property>
-    <property name="text">
-     <string>Mount</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="umntButton">
-    <property name="geometry">
-     <rect>
-      <x>272</x>
-      <y>440</y>
-      <width>110</width>
-      <height>32</height>
-     </rect>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>110</width>
-      <height>32</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>110</width>
-      <height>32</height>
-     </size>
-    </property>
-    <property name="toolTip">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Unmount USB drives. Requires root.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-    </property>
-    <property name="text">
-     <string>Unmount</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="roButton">
-    <property name="geometry">
-     <rect>
-      <x>384</x>
-      <y>440</y>
-      <width>110</width>
-      <height>32</height>
-     </rect>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>110</width>
-      <height>32</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>110</width>
-      <height>32</height>
-     </size>
-    </property>
-    <property name="toolTip">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Make /system partition read-only. Requires root.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-    </property>
-    <property name="text">
-     <string> FS R/O</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="rwButton">
-    <property name="geometry">
-     <rect>
-      <x>496</x>
-      <y>440</y>
-      <width>110</width>
-      <height>32</height>
-     </rect>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>110</width>
-      <height>32</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>110</width>
-      <height>32</height>
-     </size>
-    </property>
-    <property name="toolTip">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Make /system partition writeable. Requires root.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-    </property>
-    <property name="text">
-     <string>FS R/W</string>
-    </property>
-   </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
@@ -1099,6 +918,7 @@ QPushButton:pressed {
      <string>File</string>
     </property>
     <addaction name="actionDownload_Kodi"/>
+    <addaction name="actionView_Kodi_Log"/>
     <addaction name="actionReboot"/>
     <addaction name="actionRecovery"/>
     <addaction name="separator"/>
@@ -1116,15 +936,7 @@ QPushButton:pressed {
     </property>
     <addaction name="actionHelp"/>
    </widget>
-   <widget class="QMenu" name="menuRoot">
-    <property name="title">
-     <string>Root</string>
-    </property>
-    <addaction name="actionInstall_busybox"/>
-    <addaction name="actionUninstall_Busybox"/>
-   </widget>
    <addaction name="menuFile"/>
-   <addaction name="menuRoot"/>
    <addaction name="menuAbout"/>
    <addaction name="menuHelp"/>
   </widget>
@@ -1166,14 +978,6 @@ QPushButton:pressed {
     <string>Help</string>
    </property>
   </action>
-  <action name="actionPreferences">
-   <property name="text">
-    <string>Device Setup</string>
-   </property>
-   <property name="toolTip">
-    <string>Set up device</string>
-   </property>
-  </action>
   <action name="actionReboot">
    <property name="text">
     <string>Reboot device</string>
@@ -1187,151 +991,17 @@ QPushButton:pressed {
     <string>Reboot Recovery</string>
    </property>
   </action>
-  <action name="actionInstall_busybox">
-   <property name="text">
-    <string>Install Mount Tools</string>
-   </property>
-   <property name="toolTip">
-    <string>Install  mount tools</string>
-   </property>
-  </action>
-  <action name="actionUninstall_Busybox">
-   <property name="text">
-    <string>Uninstall Mount Tools</string>
-   </property>
-   <property name="toolTip">
-    <string>Uninstall mount tools</string>
-   </property>
-  </action>
-  <action name="actionFirmware_install">
-   <property name="text">
-    <string>Install Firmware</string>
-   </property>
-   <property name="toolTip">
-    <string>Upgrade/downgrade Fire TV firmware </string>
-   </property>
-  </action>
-  <action name="actionCredits">
-   <property name="text">
-    <string>Thanks</string>
-   </property>
-  </action>
-  <action name="actionInstall_Recovery">
-   <property name="text">
-    <string>Install Clockwork Mod</string>
-   </property>
-   <property name="toolTip">
-    <string>Install CWM recovery</string>
-   </property>
-  </action>
-  <action name="actionInstall_SSH">
-   <property name="text">
-    <string>Install SSH</string>
-   </property>
-  </action>
-  <action name="actionUninstall_SSH">
-   <property name="text">
-    <string>Uninstall SSH</string>
-   </property>
-  </action>
-  <action name="actionView_Log">
-   <property name="text">
-    <string>View Log</string>
-   </property>
-  </action>
-  <action name="actionSwap_data">
-   <property name="text">
-    <string>Swap /data</string>
-   </property>
-   <property name="toolTip">
-    <string>Swap /data to external</string>
-   </property>
-  </action>
-  <action name="actionUnlock_Bootloader">
-   <property name="text">
-    <string>Unlock Bootloader</string>
-   </property>
-  </action>
-  <action name="actionConsole">
-   <property name="text">
-    <string>Console</string>
-   </property>
-   <property name="toolTip">
-    <string>Open console on PC</string>
-   </property>
-  </action>
-  <action name="actionMount_CIFS">
-   <property name="text">
-    <string>Mount Network Share</string>
-   </property>
-  </action>
   <action name="actionDownload_Kodi">
    <property name="text">
     <string>Download Kodi</string>
    </property>
   </action>
-  <action name="actionInstall_Stock_Recovery">
+  <action name="actionView_Kodi_Log">
    <property name="text">
-    <string>Install Stock Recovery</string>
-   </property>
-  </action>
-  <action name="actionInstall_Samba">
-   <property name="text">
-    <string>Install Samba</string>
-   </property>
-  </action>
-  <action name="actionUninstall_Samba">
-   <property name="text">
-    <string>Uninstall Samba</string>
-   </property>
-  </action>
-  <action name="actionInstallBootmenu">
-   <property name="text">
-    <string>install Boot Menu</string>
-   </property>
-  </action>
-  <action name="actionUninstall_Boot_Menu">
-   <property name="text">
-    <string>Uninstall Boot Menu</string>
-   </property>
-  </action>
-  <action name="actionMove_Restore_Data">
-   <property name="text">
-    <string>Media Center Data</string>
-   </property>
-  </action>
-  <action name="actionRoot_device">
-   <property name="text">
-    <string>Root device</string>
+    <string>View Kodi Log</string>
    </property>
    <property name="toolTip">
-    <string>Root device with Towelroot</string>
-   </property>
-  </action>
-  <action name="actionSplash_Screen">
-   <property name="text">
-    <string>Splash Screen</string>
-   </property>
-   <property name="toolTip">
-    <string>Push splash.png to media directory</string>
-   </property>
-  </action>
-  <action name="actionSoft_Keypad">
-   <property name="text">
-    <string>Soft Keypad</string>
-   </property>
-  </action>
-  <action name="actionInstall_FireStarter">
-   <property name="text">
-    <string>Install FireStarter</string>
-   </property>
-  </action>
-  <action name="actionInstall_AFTV_Recovery">
-   <property name="text">
-    <string>Install AFTV 4K Recovery </string>
-   </property>
-   <property name="toolTip">
-    <string>Install Amazon Fire 4K TV Recovery</string>
+    <string>View Kodi Log</string>
    </property>
   </action>
  </widget>

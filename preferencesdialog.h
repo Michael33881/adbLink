@@ -17,9 +17,7 @@ public:
 
       void setPackagename(const QString &packagename);
       void setPulldir(const QString &pulldir);
-      void setftvUpdate(const bool &updatecheck);
-      void setsshBoot(const bool &sshcheck);
-      void setmountBoot(const bool &mountcheck);
+
 
       void setversioncheck(const bool &versioncheck);
       void setisusb(const bool &isusb);
@@ -49,9 +47,7 @@ public:
    QString data_root();
    QString port();
 
-  bool updatecheck();
-  bool sshcheck();
-  bool mountcheck();
+
    bool versioncheck();  
    bool isusb();
 

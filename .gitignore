@@ -1,11 +1,9 @@
-adbLink..user*
-adblink.log
-adblink.log.old
-adblink.db
+adbLink.pro.user*
+adbfiles/adblink.log
+adbfiles/adblink.log.old
+adbfiles/adblink.db
 *.autosave
 *~
 build
 .qmake.stash
 Makefile
-adbfiles/xbin
-backup
