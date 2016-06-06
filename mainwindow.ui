@@ -822,7 +822,7 @@
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Soft Dpad sends remote control keypresses to your device&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="text">
-     <string>Remote</string>
+     <string>Keypad </string>
     </property>
    </widget>
    <widget class="QPushButton" name="cacheButton">

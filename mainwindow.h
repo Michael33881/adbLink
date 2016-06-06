@@ -86,11 +86,8 @@ private slots:
 
    void start_server();
 
-   bool is_os5();
 
    bool is_package(QString package);
-
-   bool amazon_updates(QString onoff);
 
    int getShareCount();
 
@@ -137,12 +134,6 @@ private slots:
 
     void onReqCompleted();
 
-
-
-
-
-    void on_actionView_Log_triggered();
-
     void on_actionDownload_Kodi_triggered();
 
     void on_editRecord_clicked();
@@ -161,11 +152,9 @@ private slots:
     void internal_thumb();
     void loaddevicebox();
 
-    void on_actionMove_Restore_Data_triggered();
-
     void on_fdellButton_2_clicked();
 
-    void on_actionSplash_Screen_triggered();
+    //void on_actionSplash_Screen_triggered();
 
     void on_doConsole_clicked();
 

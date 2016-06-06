@@ -672,35 +672,6 @@ void MainWindow::start_server()
 
 
 /////////////////////////////////////////////////////
-bool MainWindow::is_os5()
-{
-
-    bool os_5;
-    QString editport = ":"+port;
-    QString command;
-    QString cstring;
-
-    if (isusb)
-    editport = "";
-
-    QString osname="ro.build.version.fireos=5";
-    cstring = getadb() + " shell cat /system/build.prop | grep " + osname;
-    command=RunProcess(cstring);
-        if (command.contains("5."))
-            {os_5 = true;
-              }
-            else
-            { os_5 = false;
-               }
-
-
-
-        return os_5;
-
-}
-
-
-/////////////////////////////////////////////////////
 bool MainWindow::is_package(QString package)
 {
 
@@ -731,82 +702,6 @@ bool MainWindow::is_package(QString package)
             is_packageInstalled = false;}
 
         return  is_packageInstalled;
-}
-
-
-/////////////////////////////////////////////////////
-bool MainWindow::amazon_updates(QString onoff)
-{
-
-    QString cstring;
-    QString command;
-    QString pkg;
-
-    if (is_os5())
-    {
-
-       cstring = getadb() + " shell su -c pm "+ onoff + " com.amazon.device.software.ota";
-
-
-    }
-
-    else
-    {
-        cstring = getadb() + " shell su -c pm "+ onoff + " com.amazon.dcp";
-     }
-
-
-      command=RunProcess(cstring);
-
-
-
-       logfile("amazon updates");
-
-        if (onoff == "enable")
-           {
-
-            if (command.contains("enabled"))
-               {
-                // logfile(cstring);
-                logfile(command);
-                return true;
-            }
-
-            else
-
-            {
-                // logfile(cstring);
-                logfile(command);
-                return false;
-            }
-
-
-           }
-
-
-
-
-        if (onoff == "disable")
-           {
-
-            if (command.contains("disabled"))
-              {
-                // logfile(cstring);
-                logfile(command);
-                return true;
-            }
-
-            else
-
-            {
-                // logfile(cstring);
-                logfile(command);
-                return false;
-            }
-
-           }
-
-        return false;
 }
 
 
@@ -1591,17 +1486,7 @@ void MainWindow::deleteRecord(QString descrip)
    logfile(sqlstatement);
 
 
-
-
-
-
 }
-
-
-
-
-
-
 
 //////////////////////////////////////////////
 void MainWindow::open_pref_database()
@@ -2452,21 +2337,6 @@ void MainWindow::on_fpushButton_clicked()
     QString xpath = "";
     QString mcpath=data_root+ "/Android/data/"+xbmcpackage+filepath;
 
-/*
-    cstring = getadb() + " shell ls "+mcpath;
-
-    command=RunProcess(cstring);
-
-    if (command.contains("No such file or directory"))
-     {
-        QMessageBox::critical(
-                    this,
-                   "",
-                    "Destination path missing");
-                    return;
-    }
-
-*/
 
 switch(ui->comboBox->currentIndex() ){
 case 0:
@@ -3200,23 +3070,6 @@ void MainWindow::on_fdellButton_clicked()
     QString hidden;
     QString mcpath=data_root+ "/Android/data/"+xbmcpackage+filepath;
 
-/*
-     cstring = getadb() + " shell ls "+mcpath;
-
-     command=RunProcess(cstring);
-
-     if (command.contains("No such file or directory"))
-      {
-         QMessageBox::critical(
-                     this,
-                    "",
-                     "Destination path missing");
-                     return;
-     }
-
-*/
-
-       // QMessageBox::critical(this,"",xbmcpackage);
 
        switch(ui->comboBox->currentIndex() ){
        case 0:
@@ -3417,22 +3270,6 @@ void MainWindow::on_fpullButton_clicked()
     QString hidden;
     QString mcpath=data_root+ "/Android/data/"+xbmcpackage+filepath;
 
-
-   /*
-   cstring = getadb() + " shell ls "+mcpath;
-
-     command=RunProcess(cstring);
-
-     if (command.contains("No such file or directory"))
-      {
-         QMessageBox::critical(
-                     this,
-                    "",
-                     "Destination path missing");
-                     return;
-     }
-
-*/
 
 
 
@@ -4376,262 +4213,12 @@ logfile("Moving kodi data to internal storage");
 
 }
 
-
-///////////////////////////////////////////////////////
-void MainWindow::on_actionMove_Restore_Data_triggered()
-
-{
-
-
-    QString lookup=daddr;
-
-     if(!isusb)
-      lookup=lookup+":"+port;
-
-    isConnected=find_daddr(lookup);
-
-   // if (!isConnected && !isusb)
-        //  on_connButton_clicked();
-
-     if (!isConnected)
-           { QMessageBox::critical(0,"",devstr2);
-              return;
-           }
-
-
-    QString cstring = getadb() + " shell ps | grep "+xbmcpackage;
-    QString command=RunProcess(cstring);
-
-
-    if (command.contains(xbmcpackage))
-       { QMessageBox::critical(this,"","Cannot move data while\n"+xbmcpackage+" is running!");
-         return;
-    }
-
-
-    //cstring=getadb()+" shell /data/local/tmp/adblink/find /storage/ -type d -maxdepth 2 -perm 0771";
-    //command=RunProcess(cstring);
-
-
-
-    dataDialog dialog;
-
-    dialog.setadb_data(getadb());
-
-   dialog.setadb_dir(adbdir);
-
-     dialog.setModal(true);
-
-    if(dialog.exec() == QDialog::Accepted)
-    {
-
-        externalLocation = dialog.externalLocation();
-
-        if(!externalLocation.startsWith("/"))
-           externalLocation.prepend("/");
-
-        if(!externalLocation.endsWith("/"))
-           externalLocation.append("/") ;
-
-        // updateLocation();
-
-        int x = dialog.returnval2();
-
-      switch(x){
-
-      case 1:
-      data_external();
-      break;
-
-      case 2:
-      data_internal();
-      break;
-
-      case 3:
-       external_thumb();
-      break;
-
-      case 4:
-       internal_thumb();
-      break;
-
-
-      default:
-       data_external();
-      break;
-      }
-
-
-
-
-    }
-
-}
-
-
 //////////////////////////////////////////
 void MainWindow::on_fdellButton_2_clicked()
 {
     ui->customdir->setText("");
 }
 
-///////////////////////////////////////////////////
-void MainWindow::on_actionSplash_Screen_triggered()
-{
-    QString lookup=daddr;
-
-     if(!isusb)
-      lookup=lookup+":"+port;
-
-    isConnected=find_daddr(lookup);
-
-    // if (!isConnected && !isusb)
-         // on_connButton_clicked();
-
-     if (!isConnected)
-           { QMessageBox::critical(0,"",devstr2);
-              return;
-           }
-
-
-    is_package(xbmcpackage);
-
-   if (!is_packageInstalled)
-      { QMessageBox::critical(
-            this,
-            "",
-            xbmcpackage+" not installed");
-         return;
-   }
-
-QString cstring;
-QString command;
-
-QString mcpath = "";
-QString adpath="/Android/data/"+xbmcpackage+filepath;
-QString root1="/sdcard/";
-QString root2= "/storage/extUsb/";
-QString root3= "/storage/sdcard1/";
-QString root4=  "/storage/usbotg/";
-QString root5= "/storage/usbdisk/";
-
-
-cstring = getadb() + " shell ls "+root1+adpath;
-command=RunProcess(cstring);
-if (!command.contains("No such file or directory"))
-{
-   mcpath=root1+adpath;
-}
-
-cstring = getadb() + " shell ls "+root2+adpath;
-command=RunProcess(cstring);
-if (!command.contains("No such file or directory"))
-{
-   mcpath=root2+adpath;
-}
-
-cstring = getadb() + " shell ls "+root3+adpath;
-command=RunProcess(cstring);
-if (!command.contains("No such file or directory"))
-{
-   mcpath=root3+adpath;
-}
-
-
-cstring = getadb() + " shell ls "+root4+adpath;
-command=RunProcess(cstring);
-if (!command.contains("No such file or directory"))
-{
-   mcpath=root4+adpath;
-}
-
-
-cstring = getadb() + " shell ls "+root5+adpath;
-command=RunProcess(cstring);
-if (!command.contains("No such file or directory"))
-{
-   mcpath=root5+adpath;
-}
-
-
-   mcpath=mcpath+"/media";
-
-
-   cstring = getadb() + " shell ls "+mcpath;
-
-   command=RunProcess(cstring);
-
-   if (command.contains("No such file or directory"))
-    {
-       QMessageBox::critical(
-                   this,
-                  "",
-                   "Destination path missing\n"+mcpath);
-                    logfile("missing path: "+mcpath);
-                    return;
-
-   }
-
-
-
-QElapsedTimer rtimer;
-int nMilliseconds;
-rtimer.start();
-
-
-
- QString fileName = QFileDialog::getOpenFileName(this,
- "Choose splash screen file", splashdir, tr("Files (*.png)"));
-
- if (!fileName.isEmpty() )
- {
-
-
-
-
-     QMessageBox::StandardButton reply;
-       reply = QMessageBox::question(this, "Push", fileName+" selected. Continue?",
-           QMessageBox::Yes|QMessageBox::No);
-       if (reply == QMessageBox::Yes) {
-
-
-           cstring = getadb() + " push "+'"'+fileName+'"'+ " "+mcpath+"/splash.png";
-
-           command=RunProcess(cstring);
-
-           // logfile(cstring);
-           logfile(command);
-
-           nMilliseconds = rtimer.elapsed();
-           logfile("process time duration: "+ QString::number(nMilliseconds/1000)+ " seconds" );
-
-
-
-           if (command.contains("bytes"))
-
-
-           {
-
-               QMessageBox::information(
-                           this,
-                          "",
-                          "Splash screen installed." );
-           }
-               else
-
-           {
-
-               QMessageBox::critical(
-                           this,
-                           "",
-                        "Splash screen installation failed.");}
-
-
-   }
-
-}
-
-}
 
 ////////////////////////////////////////
 
@@ -5067,25 +4654,16 @@ void MainWindow::on_delRecord_clicked()
 }
 
 
-void MainWindow::on_actionView_Log_triggered()
-{
-
-
-    //logfile("opening adblog dialog");
-
-     adblogDialog dialog;
-     dialog.setModal(true);
-     dialog.exec();
-
-
-}
-
 
 ///////////////////////////////////////
 
 void MainWindow::on_logButton_clicked()
 {
-    on_actionView_Log_triggered();
+
+    adblogDialog dialog;
+    dialog.setModal(true);
+    dialog.exec();
+
 }
 
 
@@ -5391,7 +4969,88 @@ rtimer.start();
 
 void MainWindow::on_mvdataButton_clicked()
 {
-    on_actionMove_Restore_Data_triggered();
+    QString lookup=daddr;
+
+     if(!isusb)
+      lookup=lookup+":"+port;
+
+    isConnected=find_daddr(lookup);
+
+   // if (!isConnected && !isusb)
+        //  on_connButton_clicked();
+
+     if (!isConnected)
+           { QMessageBox::critical(0,"",devstr2);
+              return;
+           }
+
+
+    QString cstring = getadb() + " shell ps | grep "+xbmcpackage;
+    QString command=RunProcess(cstring);
+
+
+    if (command.contains(xbmcpackage))
+       { QMessageBox::critical(this,"","Cannot move data while\n"+xbmcpackage+" is running!");
+         return;
+    }
+
+
+    //cstring=getadb()+" shell /data/local/tmp/adblink/find /storage/ -type d -maxdepth 2 -perm 0771";
+    //command=RunProcess(cstring);
+
+
+
+    dataDialog dialog;
+
+    dialog.setadb_data(getadb());
+
+   dialog.setadb_dir(adbdir);
+
+     dialog.setModal(true);
+
+    if(dialog.exec() == QDialog::Accepted)
+    {
+
+        externalLocation = dialog.externalLocation();
+
+        if(!externalLocation.startsWith("/"))
+           externalLocation.prepend("/");
+
+        if(!externalLocation.endsWith("/"))
+           externalLocation.append("/") ;
+
+        // updateLocation();
+
+        int x = dialog.returnval2();
+
+      switch(x){
+
+      case 1:
+      data_external();
+      break;
+
+      case 2:
+      data_internal();
+      break;
+
+      case 3:
+       external_thumb();
+      break;
+
+      case 4:
+       internal_thumb();
+      break;
+
+
+      default:
+       data_external();
+      break;
+      }
+
+
+
+
+    }
 
 }
 
