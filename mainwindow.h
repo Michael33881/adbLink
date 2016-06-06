@@ -154,8 +154,6 @@ private slots:
 
     void on_fdellButton_2_clicked();
 
-    //void on_actionSplash_Screen_triggered();
-
     void on_doConsole_clicked();
 
     void on_killServer_clicked();
